@@ -1,2 +1,2 @@
 # LasseRB.github.io
-the website for define.app
+the website for lasse.space
