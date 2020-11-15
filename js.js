@@ -1,4 +1,12 @@
 let xs = []
+let form = document.getElementById('email')
+let btn = document.getElementById('circle')
+    btn.addEventListener('click', ()=>{
+        form.style.display = 'block';
+        form.style.opacity = 100;
+        form.scrollIntoView({behavior: 'smooth', block: 'center'});
+    })
+
 for(var i = 0; i < 1000; i++){
     xs.push(i)
 }
