@@ -2,8 +2,8 @@
 
 html{
     font-family: 'Avenir Next Condensed', Heiti;
-   
     background-color: #F6DEC3;
+    
   
 }
 a{
@@ -11,13 +11,14 @@ a{
 }
 body{
     position: relative;
- 
+    overflow: hidden;
     /* border: 2px solid black; */
 }
 .content{
     position: relative;
     width: 350px;
     height: 100vh; 
+    top: 30px;
     margin: 0 auto;
     
 }
@@ -30,7 +31,7 @@ body{
     border-radius: 150px;
     /* background-color: rgb(254, 24, 82); */
     background-image: radial-gradient(
-        rgb(254, 24, 82) 2px,
+        rgb(98, 0, 255) 2px,
         transparent 2px
     );
     background-size: 50px 50px;
@@ -127,24 +128,22 @@ p#notify-txt{
   
   
 
-h1{
-    text-align: center;
+#title{
     position: relative;
     top: 80px;
-    /* mix-blend-mode: difference; */
-    font-size: 140pt;
-    margin: 0 auto;
+    left: -15px;
+    /* margin: 0 auto; */
+    width: 580px;
     transform: translateX(-150px);
     mix-blend-mode: overlay;
-    font-family: 'Butler', Bodoni;
+
 }
-h2{
+#subtitle{
     text-align: center;
     position: relative;
-
-    font-weight: 200;
-    font-size: 50pt;
-    top: 8px;
+    width: 290px;
+    top: 45px;
+    left: 30px;
     margin: 0 auto;
 
 }
@@ -172,7 +171,7 @@ path{
     
 }
 
-#email{
+/* #email{
     display: none;
     transition: all ease-in-out .4s;
     margin: 0 auto;
@@ -182,4 +181,4 @@ path{
 }
 iframe{
     transform: translateX(-50%);
-}
+} */
