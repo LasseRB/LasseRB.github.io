@@ -1,1 +1,1 @@
-hello!
+permalink: /index.html
