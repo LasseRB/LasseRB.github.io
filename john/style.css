@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
-.bottom, .morten, .top, .container {
+.bottom, .john, .top, .container {
   margin: 0 auto;
   padding: 0;
   width: 500px;
@@ -77,7 +77,7 @@ body {
   animation-duration: 1s;
 }
 
-.morten {
+.john {
   position: absolute;
   width: 500px;
   height: auto;
@@ -105,13 +105,13 @@ body {
   transform: translate(250px, -60px) rotateZ(15deg);
 }
 
-.morten.open {
+.john.open {
   animation-name: mortenOpen;
   animation-fill-mode: forwards;
   animation-duration: 1s;
 }
 
-.morten.clicked {
+.john.clicked {
   animation-name: mortenClicked;
   animation-fill-mode: forwards;
   animation-duration: 1s;
