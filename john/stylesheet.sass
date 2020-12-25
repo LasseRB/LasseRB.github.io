@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand')
+$imgtransform: rotate(-26deg) skew(38deg)
+
+%icons
+  margin: 0 auto
+  padding: 0
+  width: 500px
+  height: 500px
+  transition: .5s ease
+
+.bg-wrapper
+  position: absolute
+  overflow: hidden
+  height: 100vh
+  width: 100vw
+  margin: 0 auto
+  padding: 0
+  z-index: -1
+
+.bg-image
+  background: url("img/christmas.jpg") repeat
+  width: 600%
+  height: 100%
+  animation: bganim 60s linear infinite
+  opacity: 100
+
+.bg-image.transition
+  opacity: 0
+.pil
+  position: absolute
+  width: 400px
+  height: auto
+  transform: translateX(-580px)
+
+
+body
+  background-color: #FFF6D5
+  width: 100%
+  height: 100vh
+  display: flex
+  margin: 0 auto
+  padding: 0
+  align-items: center
+  justify-content: center
+
+
+.container
+  @extend %icons
+  position: relative
+  -webkit-animation: fadein 2s
+         -moz-animation: fadein 2s
+          -ms-animation: fadein 2s
+           -o-animation: fadein 2s
+              animation: fadein 2s
+  z-index: 0
+
+.top
+  @extend %icons
+  position: absolute
+  width: 520px
+  height: auto
+  z-index: 4
+  animation-duration: 1s
+.bottom-overlay
+  position: absolute
+  width: 500px
+  height: auto
+  padding: 39px 0 0 8px
+  transform: scale(1.06)
+  z-index: 3
+  
+  animation-name: showOverlay
+  animation-fill-mode: both
+  animation-duration: 1s
+
+.morten
+  @extend %icons
+  // transform: $imgtransform scale(0.4) translate(360px, -270px)
+  position: absolute
+  width: 500px
+  height: auto
+  visibility: hidden
+  animation-name: mortenClose
+  animation-fill-mode: both
+  animation-duration: .8s
+  z-index: 2
+
+.bottom
+  @extend %icons
+  position: absolute
+  width: 500px
+  height: auto
+  padding: 60px 0 0 0
+  transform: translateX(8px)
+  z-index: 1
+
+.top:hover
+  transform: translate(0, -40px) 
+.top.open
+  transform: translate(250px,-60px) rotateZ(15deg)
+
+.morten.open
+  animation-name: mortenOpen
+  animation-fill-mode: forwards
+  animation-duration: 1s
+.morten.clicked
+  animation-name: mortenClicked
+  animation-fill-mode: forwards
+  animation-duration: 1s
+.bottom-overlay.open
+  animation-name: hideOverlay
+  animation-fill-mode: both
+  animation-duration: 1s
+  
+@keyframes mortenOpen
+  0% 
+    transform: $imgtransform scale(0.4) translate(360px, -270px)
+  50%
+    transform: $imgtransform scale(0.4) translate(560px, -470px)
+  100%
+    transform: $imgtransform scale(0.4) translate(260px, -380px) rotateZ(-15deg)
+
+@keyframes mortenClose
+  0%
+    transform: $imgtransform scale(0.4) translate(260px, -380px) rotateZ(-15deg)
+  30%
+    transform: $imgtransform scale(0.4) translate(560px, -470px)
+  100% 
+    transform: $imgtransform scale(0.4) translate(360px, -270px)
+@keyframes mortenClicked
+  0%
+    transform: $imgtransform scale(0.4) translate(260px, -380px) rotateZ(-15deg)
+  100%
+    transform: $imgtransform scale(5) translate(260px, -380px)
+ 
+
+@keyframes showOverlay
+  0%
+    visibility: hidden
+  40%
+    visibility: hidden
+  60%
+    visibility: visible
+  100%
+    visibility: visible
+  
+@keyframes hideOverlay
+  0%
+    visibility: visible
+  50%
+    visibility: hidden
+  100%
+    visibility: hidden
+@keyframes bganim
+  0%
+    transform: translate3d(0,0,0)
+  100%
+    transform: translate3d(-1692px,0,0)
+
+@keyframes fadein
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+/* Firefox < 16 */
+@-moz-keyframes fadein
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein
+    from
+      opacity: 0
+    to
+      opacity: 1
+//   box-shadow: 0pc 10px 20px rgba(0, 0, 0, 0.3)
+
+// present page
+
+.frame
+  // overflow: hidden
+
+
+  #image
+    height: 80vh
+    // transform: translateY(-40px)   
+    border: 20px solid #FFF6D5
+    border-radius: 5%
+
+.text
+  padding: 30px
+  margin: auto 20px
+  max-width: 500px
+  max-height: 630px
+  font-family: 'Quicksand', sans-serif
+  background: #FFF6D5
+  border-radius: 5%
+  text-align-last: center
+.text a
+  text-decoration: none
+  font-weight: bolder
+  color: black
+.text h1
+  padding: 30px
