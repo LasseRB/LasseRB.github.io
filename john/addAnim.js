@@ -1,7 +1,7 @@
 $(Document).ready(function(){
     $(".top").on("click", function() {
         $(".top").toggleClass("open");
-        $(".morten").toggleClass("open");
+        $(".john").toggleClass("open");
         $(".bottom-overlay").toggleClass("open");
     });
     // $(".morten").on("click", function() {
