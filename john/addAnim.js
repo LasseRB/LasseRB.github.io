@@ -1,4 +1,4 @@
-$(Document).ready(function(){
+$(document).ready(function(){
     $(".top").on("click", function() {
         $(".top").toggleClass("open");
         $(".john").toggleClass("open");
