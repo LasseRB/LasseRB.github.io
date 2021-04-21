@@ -14,7 +14,7 @@ export default function Header(props) {
               <header>
                     {/* <Link to='/contact' id="contact-header">contact</Link> */}
                     <a href="mailto:lassebrunt@gmail.com">contact</a> 
-                    // <a href="#">da</a> / <a href="#">en</a>
+                     {/* <a href="#">da</a> / <a href="#">en</a> */}
 
             </header>
         </div>
