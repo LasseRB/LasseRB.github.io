@@ -1,0 +1,42 @@
+#exp-container{
+    position: relative;
+    width: 100vw; 
+    font-family: Antic Didone;
+    margin: 50px 0 0px 0;
+    /* background-color: bisque; */
+    height: 90vh;
+}
+#exp-container a{
+    color: #41517C;
+    text-decoration: underline;
+}
+#exp-box{
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    margin: 0 auto; 
+    border: 1px solid #41517C;
+    color: #41517C;
+    border-radius: 20px;
+    width: 700px;
+    height: max-content;
+   
+}
+#exp-box h3{
+    text-align-last: center;
+    position: absolute;
+    margin: 0 auto; 
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    background-color:  #EAD2C5;
+    width: 250px;
+
+}
+
+
+li{
+    padding: 10px 30px 10px 10px;
+
+}

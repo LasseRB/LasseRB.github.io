@@ -1,0 +1,32 @@
+
+html, .App{
+  background-color: #EAD2C5;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 850px;
+}
+header{
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  z-index: 1;
+  
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+header #contact-header{
+  padding-right: 10px;
+}
+
+
+
+.three{
+ position: relative;
+ height: max-content;
+ margin: 0px;
+ padding: 0px;
+ width: 100vw;
+}

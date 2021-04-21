@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasse Rützou Bruntse</title>
+</head>
+<body>
+    <div id=container>
+        <canvas id="canada"></canvas>
+       
+    </div>
+    <script>
+        window.onload = ()=>{
+            var canvas = document.getElementById("canada");
+            var ctx = canvas.getContext("2d");
+                // ctx.canvas.width  = window.innerWidth+300;
+                // ctx.canvas.height = window.innerHeight+300;
+            var scrollDiff = window.scrollY;
+            var img = new Image();
+            img.src = "lasse_unscaled.jpg";
+
+            img.onload = ()=>{
+                ctx.drawImage(img,0,0,canvas.width,canvas.height);
+                window.imageData= ctx.getImageData(0,0,canvas.width, canvas.height);
+                
+                window.addEventListener("scroll", ()=>{
+                    ctx.putImageData(scroll_shift(imageData, window.scrollX,window.scrollY,ctx),0,0)
+                });
+            }    
+   
+        }
+        
+        const scroll_shift = (data,x, y,ctx) =>{
+            console.log(y);
+            var bigwidth = (ctx.canvas.width * 4);
+            var direction = false;
+            for(var n = 0; n < data.data.length; n += 4){
+                    var brightness = (  data.data[n+0] +
+                                        data.data[n+1] +
+                                    data.data[n+2] )/3;
+                  
+                    if(brightness > y){
+                        var r = data.data[n+bigwidth+12];
+                        var g = data.data[n+bigwidth+13];
+                        var b = data.data[n+bigwidth+14];
+                        var a = data.data[n+bigwidth+15];
+                           
+                        data.data[n+0] = r;
+                        data.data[n+1] = g;
+                        data.data[n+2] = b;
+                        data.data[n+3] = a;
+                              
+                        r = data.data[n+0];
+                        g = data.data[n+1];
+                        b = data.data[n+2];
+                        a = data.data[n+3];
+                       
+                      
+                       
+                    }
+               
+                    
+            }
+            
+           return data;
+            // setTimeout(scroll_shift(data), 0);
+        }
+
+    </script>
+
+    <style>
+        html{
+            background-color:#157;
+        }
+        #container{
+            height: 120vh;
+            width: 120vw;
+            /* overflow: hidden; */
+        }
+       
+    </style>
+</body>
+</html>
