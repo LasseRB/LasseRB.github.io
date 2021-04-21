@@ -18,7 +18,7 @@ import Skills from './components/2/Skills'
 import Experience from './components/3/Experience';
 import Education from './components/3/Education';
 import Footer from './components/4/Footer';
-
+import { Helmet } from 'react-helmet'
 
 function App() {
   const { color, setColor } = useState();
@@ -26,8 +26,11 @@ function App() {
   AOS.init({ delay: 100 });
 
   return (
-
+     
     <div className="App">
+       <Helmet>
+          <title>{ 'Lasse Rützou Bruntse' }</title>
+        </Helmet>
       <Header position={color} />
       <Presentation />
      
