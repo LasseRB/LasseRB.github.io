@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Arapey&display=swap');
+/* html{
+  background-color: #EAD2C5;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+} */
+#presentation-container{
+  display: relative;
+  width: 100vw;
+  min-width: 860px;
+  /* border: 3px solid #F33; */
+  height: 602px;
+  margin: auto 0;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+#inner{
+  display: absolute;
+  /* background-color: #41517C; */
+  height: inherit;
+  transform: translateY(5%);
+}
+h1{
+  font-family: 'Antic Didone', serif;
+  color: #41517C;
+}
+#canvas{
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  /* height: 70%; */
+}
+#canvas-container{
+  position: absolute;
+  overflow: hidden;
+  /* transform: translateX(100px); */
+  width: 90vw;
+
+}
+
+#nameHeader{
+  transform: translate(20px,450px)rotateZ(-90deg);
+  transform-origin: top left;
+  font-size: 44px;
+  /* color: green; */
+}
+
+.arrow-down.icon {
+  color: #000;
+  position: absolute;
+  right: 50px;
+  top: 56px;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 415px;
+  background-color: currentColor;
+}
+
+.arrow-down.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 404px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+
+
+#line-container{
+  position: relative;
+  bottom: -390px;  
+  width: 100vw;
+  padding: 0;
+  
+}
+#line-container p{
+    text-align: center;
+    padding: 0;
+    font-family: Antic Didone;
+    font-size: small;
+}
+#line{
+  position: relative;
+  margin: 0 auto;
+  width: 80vw;
+  border-top: 1px solid #41517C;
+  padding: 0;
+  
+}
+
+
+

@@ -1,0 +1,57 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); */
+#skillList{
+    width: 400px;
+    position: relative;
+    
+    top: 0px;
+    font-family: Antic Didone;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 10px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+#skillList li{
+    list-style-type: none;
+}
+#skillList ul{
+    margin: 0;
+    padding: 5px;
+}
+
+.skillContainer{
+    display: inline-flex;
+    font-family: Scope One, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 0;
+}
+.skillContainer h3{
+    width: 80px;
+    font-style: normal;
+    /* background-color: aquamarine; */
+}
+#skillBar{
+    position: relative;
+    /* font-family: Satisfy, cursive; */
+    /* background-color: blanchedalmond; */
+    height: 2px;
+    width: 250px;
+    bottom: -10px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility: hidden;
+    /* background-color: red; */
+}
+#skillBar #bar{
+    transition: all 1.30s cubic-bezier(.42,-0.02,.18,1.01);
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #000000;
+    top: 6px;
+    /* transform: translateY(6px); */
+    /* border-bottom: 1px solid black; */
+}
