@@ -4,10 +4,11 @@
     position: relative;
     
     top: 0px;
-    font-family: Antic Didone;
+    /* font-family: Antic Didone; */
+    
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    /* font-size: 13px; */
     line-height: 10px;
     color: #000000;
     padding: 0;
@@ -26,7 +27,7 @@
     font-family: Scope One, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 14px;
     padding: 0;
 }
 .skillContainer h3{

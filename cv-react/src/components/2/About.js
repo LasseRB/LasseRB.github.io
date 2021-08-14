@@ -11,7 +11,7 @@ export default function About() {
         "fontFamily": "Antic Didone",
         "fontStyle": "normal",
         "fontWeight": "normal",
-        "fontSize": "13px",
+        // "fontSize": "15px",
         "lineHeight": "21px",
         // "border": "1px solid black",
         color: "#000000",
@@ -23,12 +23,10 @@ export default function About() {
         <div style={style}  data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200" data-aos-anchor="#presentation-container"
         data-aos-anchor-placement="top-top" >
             <h3>Who</h3>
-            <p>I’m a copenhagen based software developer, animator and master student. 
-                
-                 I am interested in all apsects of software development, 
-                 but has mainly been focused on full stack web technologies. 
+            <p>  I’m a copenhagen based software developer, working as junior consultant for Nine A/S. 
+                I also help run a small story-platform called <a href="droemmehavet.dk">drømmehavet</a>. 
                  I love learning new things and is not afraid to be thrown into the deep end.
-                  I have a past in character animation, drawing and art; although not technical in nature, I use these skills to aid me in design descisions. </p>
+                 I have a past in character animation, drawing and art. </p>
         
         </div>
 

@@ -7,16 +7,16 @@
     height: max-content;
 }
 #prj-container a{
-    color: #41517C;
-    text-decoration: underline;
+    color: #000000;
+    text-decoration: dotted;
 }
 #prj-box{
     text-align: left;
    
     position: relative;
     margin: 0 auto; 
-    border: 1px solid #41517C;
-    color: #41517C;
+    border: 1px solid #000000;
+    color: #000000;
     border-radius: 20px;
     width: 700px;
     height: max-content;

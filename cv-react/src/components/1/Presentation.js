@@ -16,7 +16,7 @@ export default function Presentation() {
                     <Canvas image={Lasse}/>
                 </div>
                 <div id="line-container">
-                    <p>I'm available for hire!</p>
+                    <p>Junior Consultant at <a href="https://nine.dk/">Nine A/S</a></p>
                     <br/>
                     <div id="line"></div>
                 </div>

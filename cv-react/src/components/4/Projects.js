@@ -2,9 +2,9 @@ import React from 'react'
 import './Projects.css'
 export default function Projects() {
     let xps = [
-        {'id':  1,'href':'https://condescending-archimedes-6280bf.netlify.app/','name':'Master Thesis: Automatic Knowledge Mapping'},
+        {'id':  1,'href':'https://peertree.app/','name':'Master Thesis: Automatic Knowledge Mapping'},
         {'id':  2,'href':'https://define.app/','name':'Define.app: A personal dictionary for students​'},
-        {'id':  3,'href':'http://lasse.space/droemmehavet_website/','name':'Drømmehavet: A bedtime story platform'}
+        {'id':  3,'href':'http://droemmehavet.dk/','name':'Drømmehavet: A bedtime story platform'}
     ]
     return (
         <div id="prj-container" >

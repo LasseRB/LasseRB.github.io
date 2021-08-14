@@ -1,13 +1,14 @@
 #exp-container{
     position: relative;
     width: 100vw; 
+    /* font-family: Antic Didone; */
     font-family: Antic Didone;
     margin: 50px 0 0px 0;
     /* background-color: bisque; */
     height: 90vh;
 }
 #exp-container a{
-    color: #41517C;
+    /* color: #41517C; */
     text-decoration: underline;
 }
 #exp-box{
@@ -16,8 +17,8 @@
     transform: translateY(-50%);
     position: relative;
     margin: 0 auto; 
-    border: 1px solid #41517C;
-    color: #41517C;
+    border: 1px solid #000000;
+    color: #000000;
     border-radius: 20px;
     width: 700px;
     height: max-content;
