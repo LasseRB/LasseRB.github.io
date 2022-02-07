@@ -3,7 +3,16 @@ import AOS from 'aos';
 import './Skill.css';
 
 export default function Skills() {
-    const elements = [{language:"Java",level:10}, {language:"JS",level:8}, {language:"Python",level:8},{language:"F#",level:4},{language:"Git",level:10},{language:"Psql",level:11},{language:"HTML",level:14.6},{language:"CSS",level:14.6}];
+    const elements = [
+        {language:"Java",level:19},
+        {language:"Groovy",level:10}, 
+        {language:"Javascript",level:18}, 
+        {language:"Python",level:8},
+        {language:"F#",level:4},
+        {language:"Git",level:15},
+        {language:"Psql",level:12},
+        {language:"HTML",level:15},
+        {language:"CSS",level:17}];
     const items = [];
    
         let index = -1;
